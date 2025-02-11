@@ -1,0 +1,25 @@
+{
+  "name": "tdd-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andkymon/tdd-practice.git"
+  },
+  "author": "andkymon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andkymon/tdd-practice/issues"
+  },
+  "homepage": "https://github.com/andkymon/tdd-practice#readme",
+  "devDependencies": {
+    "@babel/core": "^7.26.8",
+    "@babel/preset-env": "^7.26.8",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
+  }
+}
