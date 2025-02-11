@@ -58,3 +58,22 @@ describe('calculator object', () => {
     });
 });
 
+describe('caesarCipher() method', () => {
+    test('Caesar shifting', () => {
+        expect(testFunctions.caesarCipher('abc', 3)).toBe('def');
+    });
+
+    test('Shifting from z to a', () => {
+        expect(testFunctions.caesarCipher('xyz', 3)).toBe('abc');
+    });
+
+    test('Case preservation', () => {
+        expect(testFunctions.caesarCipher('HeLLo', 3)).toBe('KhOOr');
+    });
+
+    test('Punctuation remain unchanged', () => {
+        expect(testFunctions.caesarCipher('Hello, World!', 3)).toBe('Khoor, Zruog!');
+    });
+});
+
+
