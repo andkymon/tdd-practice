@@ -61,10 +61,22 @@ export const testFunctions = (() => {
         }
     }
 
+    function analyzeArray(array) {
+        array.sort();
+
+        return {
+            "average": array.reduce((total, num) => total + num) / array.length,
+            "min": array[0],
+            "max": array[array.length - 1],
+            "length": array.length
+        }
+    }
+
     return {
         capitalize,
         reverseString,
         calculator,
-        caesarCipher
+        caesarCipher,
+        analyzeArray
     }
 })();
